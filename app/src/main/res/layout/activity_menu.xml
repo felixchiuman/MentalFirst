@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuActivity"
+    android:background="@color/navy_blue">
+
+    <ImageView
+        android:id="@+id/iv_text"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_mental_first"
+        android:layout_margin="16dp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_list"
+        app:layout_constraintTop_toBottomOf="@id/btn_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ic_baseline_playlist_add_check_96"
+        android:background="@drawable/rounded_btn_orange" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_test"
+        app:layout_constraintEnd_toEndOf="@id/btn_test"
+        app:layout_constraintTop_toBottomOf="@id/btn_test"
+        android:layout_marginTop="16sp"
+        android:text="PTSD Test"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_chat"
+        app:layout_constraintBottom_toTopOf="@id/btn_test"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_baseline_list_96"
+        android:background="@drawable/rounded_btn_orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_list"
+        app:layout_constraintEnd_toEndOf="@id/btn_list"
+        app:layout_constraintTop_toBottomOf="@id/btn_list"
+        android:layout_marginTop="16sp"
+        android:text="Trauma List"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_test"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/ic_baseline_chat_96"
+        android:background="@drawable/rounded_btn_orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_chat"
+        app:layout_constraintEnd_toEndOf="@id/btn_chat"
+        app:layout_constraintTop_toBottomOf="@id/btn_chat"
+        android:layout_marginTop="16sp"
+        android:text="Chat"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btn_test"
+        app:layout_constraintTop_toBottomOf="@id/btn_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ic_baseline_call_96"
+        android:background="@drawable/rounded_btn_orange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_call"
+        app:layout_constraintEnd_toEndOf="@id/btn_call"
+        app:layout_constraintTop_toBottomOf="@id/btn_call"
+        android:layout_marginTop="16sp"
+        android:text="119"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
